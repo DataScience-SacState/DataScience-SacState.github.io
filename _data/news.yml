@@ -1,0 +1,22 @@
+- 
+  category: "Website"
+  date: 29-JAN-2016
+  datesort: 2016-01-29
+  description: "Testing CMS Jekyll system. Have some links on us:"
+  links: 
+    - 
+      name: "Rick Roll"
+      url: "https://www.youtube.com/watch?v=6n3pFFPSlW4"
+    - 
+      name: "Coder Fuel"
+      url: "http://ta.co"
+
+- 
+  category: "Presentation"
+  date: 09-NOV-2015
+  datesort: 2015-11-09
+  description: "Just a basic introduction on what is Data Science"
+  links: 
+    - 
+      name: Slides
+      url: "https://docs.google.com/presentation/d/1Oilb1BjPXXB9IZUhwAPCleJOThzuErfWqSwVckQGXyo/edit?usp=sharing"

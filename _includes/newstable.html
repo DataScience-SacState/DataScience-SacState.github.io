@@ -1,0 +1,29 @@
+<table class="table" style="text-align: left">
+
+	<thead>
+		<tr>
+			<th>Date</th>
+			<th>What We Covered</th>
+			<th>Links</th>
+		</tr>
+	</thead>
+	<tbody>
+
+		{% assign sortednews = site.data.news | sort:"datesort" | reverse %}
+		<!-- JavaScript sort later? -->
+		{% for event in sortednews %}
+		<tr>
+			<td>{{ event.date }}</td>
+			<td>{{ event.description }}</td>
+			<td>{% if event.links %}
+				<ul dir="rtl">
+					{% for link in event.links %}
+					<li><a href="{{ link.url }}">{{ link.name }}</a></li> {% endfor %}
+				</ul> {% endif %}
+			</td>
+		</tr>
+		{% endfor %}
+
+	</tbody>
+
+</table>
