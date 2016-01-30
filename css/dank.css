@@ -2,3 +2,19 @@
 {
   min-width: 200px;
 }
+
+.centered
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer
+{
+  margin-bottom: 40px;
+}
+
+.field
+{
+  max-width: 500px;
+}

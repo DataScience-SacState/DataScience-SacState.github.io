@@ -1,0 +1,41 @@
+
+<!-- Many thanks to Tiago Romero Garcia
+    https://coderwall.com/p/8lq1ba/how-to-create-a-contact-form-for-a-github-pages-served-jekyll-website -->
+
+
+<form id="contact-form" class="contact-form" method="post" data-success="Message successfully sent!">
+
+  <label for="name">Name</label>
+  <input id="name" type="text" name="name" class="field" required autofocus /><br/>
+
+  <label for="email">E-mail</label>
+  <input id="email" type="email" name="email" class="field" required /><br/>
+
+  <label for="subject">Subject</label>
+  <input id="subject" type="text" name="subject" class="field" required /><br/>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" required ></textarea><br/>
+
+  <label for="recaptcha_response_field">Captcha</label>
+  <div id="recaptcha_widget" class="recaptcha">
+    <div class="image">
+      <div id="recaptcha_image"></div>
+    </div>
+
+    <div class="headline recaptcha_only_if_image">Enter the words above:</div>
+    <div class="headline recaptcha_only_if_audio">Enter the numbers you hear:</div>
+
+    <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" required />
+
+    <span class="recaptcha_icon"><a href="javascript:Recaptcha.reload()"><i class="fa fa-refresh"></i></a></span>
+    <span class="recaptcha_icon recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')"><i class="fa fa-volume-up"></i></a></span>
+    <span class="recaptcha_icon recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')"><i class="fa fa-font"></i></a></span>
+    <span class="recaptcha_icon"><a href="javascript:Recaptcha.showhelp()"><i class="fa fa-question-circle"></i></a></span>
+  </div><br/>
+  <div id="notice" class="notice" data-captcha-failed="Incorrect captcha!" data-error="There was an error sending the message, please try again."></div>
+  <button type="submit">Send</button>
+</form>
+
+<script src="js/contactform.js"></script>
+<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>

@@ -77,7 +77,7 @@ layout: default
                 <p align="left" style="font-size:160%;">Data Science is the intersection of computer science, math, statistics, and machine learning. </p>
                 <p align="left"  style="font-size:160%;">The purpose of the club is to give students a background on data science through lectures and discussions, connect with alumni working as data scientists, and have hangouts to work on projects to build your resume and learn new concepts. </p>
                 <p align="left" style="font-size:160%;">Our tentative plan is meet in Riverside 5029 from 12-1 on Monday, starting February 8th. This may change though so please follow this page for updates</p>
-                
+
                 <br>
                 <br>
 
@@ -100,7 +100,7 @@ layout: default
                 <div class= "col-lg-9">
                   <div class= "table-responsive">
                     <table class="table" style="text-align: left">
-					
+
 						<thead>
 							<tr>
 								<th>Date</th>
@@ -110,7 +110,7 @@ layout: default
 							</tr>
 						</thead>
 						<tbody>
-					
+
 							{% assign sortednews = site.data.news | sort:"datesort" | reverse %}
 							<!-- JavaScript sort later? -->
 							{% for event in sortednews %}
@@ -126,11 +126,11 @@ layout: default
 								</td>
 							</tr>
 							{% endfor %}
-					
+
 						</tbody>
-					
+
 					</table>
-                    
+
                   </div>
                 </div>
             </div>
@@ -139,8 +139,13 @@ layout: default
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
+        <div class="container centered">
+
+              <div class="row">
+                  <div class="col-lg-12">
+              <h1>Contact Us</h1>
+            {% include contactform.html %}
+            <!---<div class="row">
                 <div class="col-lg-12">
                     <h1>Connect With Us</h1>
                     <a class="bottom-btn btn btn-social btn-twitter" href = "https://twitter.com/csusdatascience">
@@ -158,7 +163,11 @@ layout: default
                     </a>
 
                 </div>
+            </div>-->
+
+
             </div>
+          </div>
         </div>
     </section>
 
