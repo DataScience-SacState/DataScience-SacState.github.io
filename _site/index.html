@@ -1,8 +1,47 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SacState's official Data Science club
+">
+    <meta name="author" content="">
+
+    <title>
+	    
+	    	Data Science @ Sac State
+	    
+    </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!--Buttons CSS-->
+    <link href="bower_components/bootstrap-social/bootstrap-social.css" rel= "stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel= "stylesheet">
+
+    <!--dankkkk memezzz-->
+    <link href="css/dank.css" rel ="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  
+  <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -114,21 +153,34 @@ layout: default
 						</thead>
 						<tbody>
 
-							{% assign sortednews = site.data.news | sort:"datesort" | reverse %}
+							
 							<!-- JavaScript sort later? -->
-							{% for event in sortednews %}
+							
 							<tr>
-								<td>{{ event.date }}</td>
-								<td>{{ event.category }}</td>
-								<td>{{ event.description }}</td>
-								<td>{% if event.links %}
+								<td>29-JAN-2016</td>
+								<td>Website</td>
+								<td>Testing CMS Jekyll system. Have some links on us:</td>
+								<td>
 									<ul dir="rtl">
-										{% for link in event.links %}
-										<li><a href="{{ link.url }}">{{ link.name }}</a></li> {% endfor %}
-									</ul> {% endif %}
+										
+										<li><a href="https://www.youtube.com/watch?v=6n3pFFPSlW4">Rick Roll</a></li> 
+										<li><a href="http://ta.co">Coder Fuel</a></li> 
+									</ul> 
 								</td>
 							</tr>
-							{% endfor %}
+							
+							<tr>
+								<td>09-NOV-2015</td>
+								<td>Presentation</td>
+								<td>Just a basic introduction on what is Data Science</td>
+								<td>
+									<ul dir="rtl">
+										
+										<li><a href="https://docs.google.com/presentation/d/1Oilb1BjPXXB9IZUhwAPCleJOThzuErfWqSwVckQGXyo/edit?usp=sharing">Slides</a></li> 
+									</ul> 
+								</td>
+							</tr>
+							
 
 						</tbody>
 
@@ -185,3 +237,23 @@ layout: default
     <script src="js/scrolling-nav.js"></script>
 
 </body>
+
+  
+  <div class="container centered footer">
+	<h1>Connect With Us</h1>
+	<a class="bottom-btn btn btn-social btn-twitter"
+		href="https://twitter.com/csusdatascience"> <span
+		class="fa fa-twitter"></span> Follow us on Twitter
+	</a>
+	<a class="bottom-btn btn btn-social btn-facebook"
+		href="https://www.facebook.com/groups/1735039680067737/?fref=ts">
+		<span class="fa fa-facebook"></span> Join our Facebook Group
+	</a>
+	<a class="bottom-btn btn btn-social btn-github"
+		href="https://www.github.com/DataScience-SacState"> <span
+		class="fa fa-github"></span> Check us out on Github
+	</a>
+</div>
+
+  
+</html>
