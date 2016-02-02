@@ -14,7 +14,45 @@
   margin-bottom: 40px;
 }
 
+.footer .row{
+	text-align: center;
+}
+
+.footer h1{
+	text-align: center;
+}
+
 .field
 {
   max-width: 500px;
+}
+
+.intro-section{
+	height: auto;
+	padding-bottom: 50px;
+}
+
+.about-section{
+	height: auto;
+	padding-top: 50px;
+}
+
+.services-section{
+	height: auto;
+	padding-top: 50px;
+}
+
+.btn-social{
+	min-width: 220px;
+}
+
+/* holy fuck we need to remake this site and not use bootstrap */
+@media (max-width: 414px){
+	.intro-section{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.about-section{
+		padding-top: 50px;
+	}
 }
