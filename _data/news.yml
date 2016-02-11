@@ -1,4 +1,13 @@
 - 
+  category: "Presentation"
+  date: 08-FEB-2016
+  datesort: 2016-02-08
+  description: "Intro to Python"
+  links: 
+    - 
+      name: Slides
+      url: "https://docs.google.com/presentation/d/1gh3kWY4sQ0KeDnFZzCX3MSl9tCVX2t_6NL2K0PhaXFw/edit?usp=sharing"
+- 
   category: "Website"
   date: 29-JAN-2016
   datesort: 2016-01-29
