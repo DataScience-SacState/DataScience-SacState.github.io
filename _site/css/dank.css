@@ -14,6 +14,11 @@
   margin-bottom: 40px;
 }
 
+.field
+{
+  max-width: 500px;
+}
+
 .footer .row{
 	text-align: center;
 }
@@ -22,12 +27,12 @@
 	text-align: center;
 }
 
-.field
-{
-  max-width: 500px;
+.intro-section{
+	height: auto;
+	padding-bottom: 50px;
 }
 
-.intro-section{
+.projects-section{
 	height: auto;
 	padding-bottom: 50px;
 }
@@ -56,3 +61,6 @@
 		padding-top: 50px;
 	}
 }
+.entry-image { width: 200px; height: 200px; padding: 10px;}
+.entry-image img { transition: all .2s ease-in-out; width: 128px; }
+.entry-image img:hover { transform: scale(3); }

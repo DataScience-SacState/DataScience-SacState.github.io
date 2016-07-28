@@ -32,6 +32,11 @@
 	padding-bottom: 50px;
 }
 
+.projects-section{
+	height: auto;
+	padding-bottom: 50px;
+}
+
 .about-section{
 	height: auto;
 	padding-top: 50px;
@@ -56,3 +61,6 @@
 		padding-top: 50px;
 	}
 }
+.entry-image { width: 200px; height: 200px; padding: 10px;}
+.entry-image img { transition: all .2s ease-in-out; width: 128px; }
+.entry-image img:hover { transform: scale(3); }
